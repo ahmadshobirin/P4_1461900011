@@ -3,11 +3,10 @@
 namespace App\Imports;
 
 use App\Models\Pasien;
-use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithStartRow;
 
-class PasienImport implements ToModel
+class PasienImport implements ToModel, WithStartRow
 {
     public function model(array $row)
     {
